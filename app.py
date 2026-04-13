@@ -2,34 +2,38 @@ import os
 import warnings
 import logging
 
-# 🔥 Suppress logs BEFORE tensorflow loads
-os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+# =========================
+# 🔥 MUST BE FIRST (before TF import)
+# =========================
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 
 warnings.filterwarnings("ignore")
 logging.getLogger("tensorflow").setLevel(logging.ERROR)
 
-import tensorflow as tf
-
-# 🔥 FINAL TensorFlow suppression
-
-tf.get_logger().setLevel('ERROR')
-
-
+# =========================
+# Imports
+# =========================
 import json
 import numpy as np
 import streamlit as st
 import joblib
-import tensorflow as tf
+
+import tensorflow as tf   # ✅ IMPORT ONLY ONCE (FIXED)
+
 import plotly.graph_objects as go
 import matplotlib.pyplot as plt
 from datetime import datetime
 from io import BytesIO
+
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
+
 import streamlit.components.v1 as components
 
-
+# Final TF silence
+tf.get_logger().setLevel("ERROR")
 
 
 
