@@ -2,8 +2,8 @@ streamlit
 numpy
 pandas
 scikit-learn
-matplotlib
-seaborn
 joblib
 plotly
+matplotlib
 reportlab
+tensorflow==2.15.0
