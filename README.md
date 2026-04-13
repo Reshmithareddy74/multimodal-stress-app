@@ -2,12 +2,7 @@ TITLE – AI-Based Stress Level Detection Using Multimodal Data
 
 Abstract :
 
-Stress is a growing concern due to academic, work-related, and lifestyle pressures, negatively impacting mental and physical health. Traditional
-assessment methods, such as questionnaires, are often subjective and timeconsuming. Recent advances in AI, ML, and DL enable automatic stress detection
-using multimodal data from wearable and behavioral sources. This paper reviews existing AI-based stress detection approaches, highlighting datasets,
-algorithms, strengths, and limitations, and identifies research gaps such as limited multimodal integration, lack of real-time monitoring, insufficient
-personalization, and dataset biases. These gaps motivate the development of a proposed multimodal AI system for continuous, objective, and personalized
-stress monitoring.
+Stress is a growing concern due to academic, work-related, and lifestyle pressures, negatively impacting mental and physical health. Traditional assessment methods, such as questionnaires, are often subjective and timeconsuming. Recent advances in AI, ML, and DL enable automatic stress detection using multimodal data from wearable and behavioral sources. This paper reviews existing AI-based stress detection approaches, highlighting datasets, algorithms, strengths, and limitations, and identifies research gaps such as limited multimodal integration, lack of real-time monitoring, insufficient personalization, and dataset biases. These gaps motivate the development of a proposed multimodal AI system for continuous, objective, and personalized stress monitoring.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Objectives :
 
